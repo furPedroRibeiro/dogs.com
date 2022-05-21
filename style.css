@@ -51,6 +51,10 @@ header a:hover{
   display: flex;
   flex-direction: column;
 
+  width: 60vh;
+  margin-inline: 5vw;
+  margin-top: 5vh;
+
   text-align: justify;
   gap: 4vh;
 }

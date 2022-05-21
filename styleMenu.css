@@ -17,6 +17,23 @@ body{
   padding-inline: 5vw;
 }
 .content{
-  height: 90vh;
+  height: auto;
   width: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 5vh;
+
+  justify-content: center;
+  align-items: center;
+  gap: 10vh;
+}
+.content a{
+  text-decoration: none;
+  color: beige;
+  font-size: 30px;
+}
+.content a:hover{
+  border-bottom: 1px solid beige;
 }
