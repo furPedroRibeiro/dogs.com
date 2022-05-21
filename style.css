@@ -10,6 +10,10 @@ body{
   font-family: 'Rubik', sans-serif;
   background-image: url(img/background.png);
 }
+.site{
+  display: flex;
+  flex-direction: column;
+}
 .header{
   height: 12vh;
   width: 100vw;
@@ -18,7 +22,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
 }
 header a{
   font-size: 22px;
@@ -26,37 +29,40 @@ header a{
   color: rgb(255, 255, 255);
 }
 header a:hover{
-  color: beige;
+  color: rgb(245, 245, 220);
   height: 3.5vh;
   border-bottom: 1px solid beige;
 }
+.iconMenu{
+  display: none;
+}
 .main{
   display: flex;
-  margin-top: 11vh;
+  align-items: center;
+  justify-content: space-around;
+  height: 70vh;
   flex-wrap: wrap;
 }
-.main img{
-  margin-top: 4vh;
-  margin-left: 15vw;
+.main .img{
+  margin-top: 17vh;
 }
 .content{
   display: flex;
   flex-direction: column;
+  
+  margin-top: 5vh;
+  width: 60vw;
 
-  width: 40vw;
-  margin-top: 10vh;
-  margin-left: 15vw;
-
+  flex-wrap: wrap;
   text-align: justify;
-  gap: 2vh;
+  gap: 4vh;
 }
 .content a{
   text-decoration: none;
 }
 .btn{
-  width: 15vw;
-  height: 6vh;
-  margin-top: 10vh;
+  width: auto;
+  height: 5vh;
 
   color: white;
   background-color: var(--principalColor);
@@ -73,4 +79,30 @@ header a:hover{
 
   border: 1px solid var(--principalColor);
   cursor: pointer;
+}
+@media (max-width: 600px)
+{
+  body{
+    font-family: 'Rubik', sans-serif;
+    background: url(img/backgroundMob.png);
+    
+  }
+  header a{
+    display: none;
+  }
+  .header{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5vw;
+  }
+  .iconMenu{
+    display: flex;
+  }
+  .iconMenu:hover{
+    height: auto;
+    border: none;
+  }
+  .main .img{
+    margin-top: 5vh;
+  }
 }
