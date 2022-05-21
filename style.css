@@ -17,6 +17,8 @@ body{
   flex-direction: column;
 }
 .header{
+  position: fixed;
+
   height: 12vh;
   width: 100vw;
   background-color: var(--principalColor);
@@ -41,18 +43,20 @@ header a:hover{
 .main{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  
   flex-wrap: wrap;
+  margin-top: 10vh;
 }
 .img{
+  margin-left: 15vw;
   margin-top: 10vh;
 }
 .content{
   display: flex;
   flex-direction: column;
 
-  width: 60vh;
-  margin-inline: 5vw;
+  width: 50vw;
+  margin-left: 15vw;
   margin-top: 5vh;
 
   text-align: justify;
@@ -81,6 +85,25 @@ header a:hover{
   border: 1px solid var(--principalColor);
   cursor: pointer;
 }
+.quemsomos{
+  margin-top: 20vh;
+
+  display: flex;
+  align-items: center;
+  
+  flex-wrap: wrap;
+}
+.quemsomos header{
+  display: flex;
+  flex-direction: column;
+
+  width: 50vw;
+  margin-left: 15vw;
+  margin-top: 5vh;
+
+  text-align: justify;
+  gap: 4vh;
+}
 @media (max-width: 600px)
 {
   body{
@@ -107,3 +130,4 @@ header a:hover{
     margin-top: 5vh;
   }
 }
+
